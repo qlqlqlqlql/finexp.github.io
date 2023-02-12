@@ -1,0 +1,137 @@
+*,
+*::before,
+*::after {
+   padding: 0;
+   margin: 0;
+   bottom: 0;
+   box-sizing: border-box;
+}
+
+a {
+   text-decoration: none;
+}
+
+ul,
+ol,
+li {
+   list-style: none;
+}
+
+img {
+   vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: inherit;
+   font-size: inherit;
+}
+
+html,
+body {
+   height: 100%;
+   font-family: 'Source Sans Pro';
+   color: #000;
+   background-color: #212133;
+}
+
+body.lock {
+   overflow: hidden;
+}
+
+/* ---------------------------------------- */
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   background: linear-gradient(100.69deg, #212133 0%, #292832 100%);
+}
+
+/* ---------------------------------------- */
+[class*="__container"] {
+   max-width: 1356px;
+   margin: 0 auto;
+   padding: 0px 15px;
+}
+
+/* @media (max-width: 365px) {
+   [class*="__container"] {
+      max-width: 330px;
+      padding: 0px;
+   }
+} */
+/* ---ADMIN-HEADER--------------------- */
+.admin-header {}
+
+.admin-header__container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.admin-header__logo img {
+   width: 115px;
+   height: 65px;
+}
+
+.admin-header__title {
+   font-family: 'Playfair Display';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 80px;
+   line-height: 125%;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   text-shadow: 0px 4px 10px rgba(255, 255, 255, 0.26);
+}
+
+.admin-header__exit {
+   font-family: 'Source Sans Pro';
+   font-weight: 700;
+   font-size: 19px;
+   line-height: 121%;
+   color: #FFFFFF;
+}
+/* -----ADMIN-MAIN--------- */
+.admin-mainblock {
+   margin-top: 100px;
+}
+
+table {
+   font-family: monospace;
+   text-align: center;
+   border-collapse: collapse;
+   margin: auto;
+}
+
+.admin-main {
+   border-top: 1px solid #4b4b75;
+}
+
+.admin-str {
+   border-top: 1px solid #4b4b75;
+   transition: .3s;
+   color: #FFFFFF;
+}
+
+th {
+   font-weight: 300;
+   padding: 5px 40px;
+   color: #FFFFFF;
+   text-transform: uppercase;
+   font-size: 24px;
+}
+
+td {
+   font-size: 20px;
+   padding: 5px 35px;
+}
+
+.admin-str:hover {
+   background-color: #4b4b75;
+}
